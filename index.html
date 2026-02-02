@@ -1,10 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helal Syed | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: #60a5fa;
+            border-bottom: 2px solid #1e40af;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skills-grid div {
+            background: #020617;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.3rem;
+            }
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+<!-- HERO -->
+<header>
+    <h1>Helal Syed</h1>
+    <p>B.Tech CSE | Data Science & Analytics | Full Stack Enthusiast</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Computer Science Engineering student with a strong foundation in
+            programming, data analysis, and software development. I enjoy building
+            real-world applications and extracting meaningful insights from data.
+            My academic background and hands-on projects have helped me develop
+            strong problem-solving and analytical skills.
+        </p>
+        <br>
+        <p>
+            I am particularly interested in roles related to Data Science,
+            Quantitative Analysis, and Full Stack Development, where I can combine
+            logic, mathematics, and technology to create impactful solutions.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div>
+            <strong>Programming</strong>
+            <p>Python, C++, JavaScript</p>
+        </div>
+        <div>
+            <strong>Web Development</strong>
+            <p>HTML, CSS, Node.js, Express</p>
+        </div>
+        <div>
+            <strong>Databases</strong>
+            <p>MongoDB, SQL</p>
+        </div>
+        <div>
+            <strong>Data & Analytics</strong>
+            <p>Power BI, Tableau, Data Visualization</p>
+        </div>
+        <div>
+            <strong>Core CS</strong>
+            <p>DBMS, Computer Networks, DSA</p>
+        </div>
+        <div>
+            <strong>Tools</strong>
+            <p>Git, GitHub, VS Code</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Data & Software Intern</h3>
+        <p><em>Iconic Techno Solution Pvt. Ltd. (Jan 2024 – Jun 2024)</em></p>
+        <ul>
+            <li>Worked on data analysis and backend development tasks.</li>
+            <li>Developed data-driven solutions using Python and MongoDB.</li>
+            <li>Collaborated with teams to understand real-world software workflows.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Full Stack Calculator Application</h3>
+        <p>
+            A complete web application with frontend, backend, and MongoDB
+            integration. The application stores calculation history in a database
+            and demonstrates CRUD operations.
+        </p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+    </div>
+
+    <div class="card">
+        <h3>Crypto Fraud Detection (Big Data Project)</h3>
+        <p>
+            An analytical project focused on detecting suspicious cryptocurrency
+            transactions using data mining and big data concepts.
+        </p>
+        <p><strong>Tech:</strong> Python, Data Analysis, Big Data Tools</p>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+    <h2>Certifications</h2>
+    <div class="card">
+        <ul>
+            <li>Data Science Bootcamp – Udemy</li>
+            <li>Fundamentals of Digital Marketing – Google Digital Academy</li>
+        </ul>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+    <h2>Education</h2>
+    <div class="card">
+        <div class="timeline-item">
+            <strong>B.Tech in Computer Science Engineering</strong><br>
+            MIT World Peace University
+        </div>
+        <div class="timeline-item">
+            <strong>Diploma</strong><br>
+            CGPA: 9.02
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: <a href="mailto:syedhelal62@gmail.com">yourmail@example.com</a></p>
+        <p>GitHub: <a href="#">https://github.com/sayedhelal</a></p>
+        <p>LinkedIn: <a href="#">https://linkedin.com/in/yourprofile</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Helal Syed | Portfolio
+</footer>
+
 </body>
 </html>
