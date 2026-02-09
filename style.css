@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a; /* dark background */
+}
+
+
+/* ===== CARD ===== */
+.form{
+    width:420px;
+    background:#1e293b;
+    padding:45px;
+    border-radius:14px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+    color:white;
+}
+
+.form h2{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+
+/* ===== INPUT GROUP ===== */
+.input-group{
+    position:relative;
+    margin-bottom:22px;
+}
+
+/* input */
+.input-group input{
+    width:100%;
+    padding:14px 45px 14px 45px;
+    font-size:16px;
+    background:#334155;
+    border:2px solid transparent;
+    border-radius:8px;
+    color:white;
+    outline:none;
+    transition:0.25s;
+}
+
+/* focus */
+.input-group input:focus{
+    border-color:#3b82f6;
+}
+
+/* label */
+.input-group label{
+    position:absolute;
+    left:45px;
+    top:14px;
+    font-size:15px;
+    color:#9ca3af;
+    pointer-events:none;
+    transition:0.2s;
+}
+
+/* floating effect */
+.input-group input:focus + label,
+.input-group input:valid + label{
+    top:-9px;
+    left:38px;
+    font-size:12px;
+    background:#1e293b;
+    padding:0 5px;
+    color:#3b82f6;
+}
+
+
+/* icons */
+.icon{
+    position:absolute;
+    left:15px;
+    top:15px;
+    color:#9ca3af;
+}
+
+/* eye icon perfectly aligned */
+.toggle{
+    position:absolute;
+    right:15px;
+    top:15px;
+    cursor:pointer;
+    color:#9ca3af;
+}
+
+
+/* errors */
+small{
+    font-size:13px;
+    margin-top:6px;
+    color:#ef4444;
+}
+
+/* success & error borders */
+.success input{
+    border-color:#22c55e;
+}
+
+.error input{
+    border-color:#ef4444;
+}
+
+
+/* ===== PASSWORD STRENGTH ===== */
+.strength{
+    height:6px;
+    background:#475569;
+    border-radius:6px;
+    margin-top:8px;
+}
+
+#strengthBar{
+    height:100%;
+    width:0;
+    border-radius:6px;
+}
+
+
+/* ===== BUTTON ===== */
+button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+    font-weight:600;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.25s;
+}
+
+button:hover:not(:disabled){
+    background:#2563eb;
+}
+
+button:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+
+
+/* success message */
+#successMsg{
+    text-align:center;
+    margin-top:15px;
+    color:#22c55e;
+    font-weight:600;
+}
